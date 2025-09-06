@@ -1,3 +1,7 @@
+/* Justificar todos os parágrafos */
+p {
+    text-align: justify;
+}
 body, html {
     margin: 0;
     padding: 0;
