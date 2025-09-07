@@ -1,14 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Página Principal</title>
     <link rel="stylesheet" href="assets/css/style.css">
+        <style>
+            .skip-link {
+                position: absolute;
+                left: -9999px;
+                top: auto;
+                width: 1px;
+                height: 1px;
+                overflow: hidden;
+            }
+            .skip-link:focus {
+                position: static;
+                width: auto;
+                height: auto;
+                padding: 8px 12px;
+                outline: 2px solid;
+            }
+        </style>
+    </style>
 </head>
 
 <body>
+    
+    <a class="skip-link" href="#main-content">Pular para o conteúdo principal</a>
+
     <header class="top-header" style="display: flex; align-items: center; justify-content: space-between; padding: 16px 24px 8px 24px; border-bottom: 1px solid #ccc;">
         <div class="logos" style="display: flex; gap: 16px; align-items: center;">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/63/Wikipedia-logo.png" alt="Logo Wikipedia" style="height: 64px;" />
@@ -24,7 +44,7 @@
     <div class="content" id="inicio">
         <aside class="sidebar" aria-labelledby="neste-artigo">
             <h2 id="neste-artigo">Neste Artigo</h2>
-            <nav aria-label="Navegação do artigo">
+            <nav role="navigation" aria-label="Navegação do artigo">
                 <ul>
                     <li><a href="#main-content">Tecnologias emergentes</a></li>
                     <li><a href="#historia">História das tecnologias emergentes</a></li>
@@ -35,8 +55,8 @@
                     <li><a href="#referencias">Referências</a></li>
                 </ul>
             </nav>
+
             <div class="sidebar-gallery" style="margin: 32px 0 0 0; display: flex; flex-direction: column; gap: 20px; align-items: flex-start; max-width: 180px;">
-                </figure>
                 <figure style="text-align: center;">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/RFID_antenna_2007.jpg/120px-RFID_antenna_2007.jpg" alt="Antena RFID" style="max-width: 120px; width: 100%; border-radius: 6px;" />
                     <figcaption style="font-size: 0.85em; color: #444;">Antena RFID</figcaption>
@@ -69,32 +89,35 @@
                 <summary style="font-weight: bold; cursor: pointer;">O que são tecnologias emergentes?</summary>
                 <p>São inovações recentes que têm potencial para impactar significativamente a sociedade, a economia e o cotidiano.</p>
             </details>
+
             <article aria-labelledby="titulo-principal">
                 <header>
                     <h1 id="titulo-principal">Tecnologias emergentes</h1>
                 </header>
-                    <p>Na história da tecnologia, tecnologias emergentes[3][4] são avanços contemporâneos e inovações em diversos campos da tecnologia. Muitas tecnologias de conversão tem surgido na convergência tecnológica de diferentes sistemas, com os mesmos objetivos de evolução como meta. Convergência pode se referir à tecnologias anteriormente separadas, como voz, dados e vídeo, que atualmente compartilham os mesmos recursos e interagem mutuamente, aumentando bastante a eficiência.</p>
-                    <p>Pela perspectiva de mercado, tecnologias emergentes são todo tipo de inovações técnicas, representando progresso dentro de uma área, tendo como finalidade a vantagem competitiva.[5] </p>
+
+                <p>Na história da tecnologia, tecnologias emergentes[3][4] são avanços contemporâneos e inovações em diversos campos da tecnologia. Muitas tecnologias de conversão tem surgido na convergência tecnológica de diferentes sistemas, com os mesmos objetivos de evolução como meta. Convergência pode se referir à tecnologias anteriormente separadas, como voz, dados e vídeo, que atualmente compartilham os mesmos recursos e interagem mutuamente, aumentando bastante a eficiência.</p>
+                <p>Pela perspectiva de mercado, tecnologias emergentes são todo tipo de inovações técnicas, representando progresso dentro de uma área, tendo como finalidade a vantagem competitiva.[5] </p>
+
                 <section id="historia">
-                    <p><mark>Nanotecnologia</mark> e <mark>Inteligência Artificial</mark> são áreas em ascensão.</p>
                     <h2>História das tecnologias emergentes</h2>
-                    
-                        <p>Tecnologias emergentes, em geral, denotam desenvolvimentos significantes em determinado campo. Exemplos de campos de novas tecnologias incluem tecnologia da informação, nanotecnologia, biotecnologia, ciência cognitiva, robótica e inteligência artificial.[6]</p>
-                        <p>Ao longo dos séculos, métodos inovadores e novas tecnologias tem sido desenvolvidos. A pesquisa teórica é responsável por algumas dessas tecnologias, ao passo que outras provem de pesquisa e desenvolvimento comercial. </p>
-                        <p>Crescimento tecnológico inclui grandes desenvolvimentos e tecnologias disruptivas. Toda tecnologia disruptiva constitui um novo método capaz de tornar obsoleta tecnologias passadas, tornando-as, ao mesmo, redundantes; como exemplos, no passado, podemos citar carroças impulsionadas por cavalos sendo substituídas por automóveis, no presente, pendrives substituindo discos ópticos, e, no futuro, hologramas substituindo telas em dispositivos de visualização e comunicação à distância. </p>
-                    
+                    <p><mark>Nanotecnologia</mark> e <mark>Inteligência Artificial</mark> são áreas em ascensão.</p>
+                    <p>Tecnologias emergentes, em geral, denotam desenvolvimentos significantes em determinado campo. Exemplos de campos de novas tecnologias incluem tecnologia da informação, nanotecnologia, biotecnologia, ciência cognitiva, robótica e inteligência artificial.[6]</p>
+                    <p>Ao longo dos séculos, métodos inovadores e novas tecnologias tem sido desenvolvidos. A pesquisa teórica é responsável por algumas dessas tecnologias, ao passo que outras provem de pesquisa e desenvolvimento comercial. </p>
+                    <p>Crescimento tecnológico inclui grandes desenvolvimentos e tecnologias disruptivas. Toda tecnologia disruptiva constitui um novo método capaz de tornar obsoleta tecnologias passadas, tornando-as, ao mesmo, redundantes; como exemplos, no passado, podemos citar carroças impulsionadas por cavalos sendo substituídas por automóveis, no presente, pendrives substituindo discos ópticos, e, no futuro, hologramas substituindo telas em dispositivos de visualização e comunicação à distância. </p>
                 </section>
+
                 <section id="debates">
                     <blockquote cite="https://www.wired.com/2000/04/joy-2/" style="margin: 24px 0; padding: 12px 18px; background: #f7f7f7; border-left: 4px solid #ccc;">
                         "O futuro não precisa de nós."<br>
                         <span style="font-size:0.9em; color:#555;">— Bill Joy, Wired Magazine, 2000</span>
                     </blockquote>
                     <h2>Debates sobre as tecnologias emergentes</h2>
-                         <p>Muitos escritores, incluindo o cientista da computação Bill Joy,[7] tem identificado grupos tecnológicos que consideram críticos para o futuro da humanidade. Joy alerta que a tecnologia poderá ser utilizada, pelas elites, tanto para o bem, quanto para o mal. Podem empregá-la como faria um "Bom Pastor" para melhorar a qualidade de vida de todas as pessoas, ou podem decidir que todas as pessoas são supérfluas e dar início ao extermínio em massa, eliminando aqueles considerados desnecessários devido a um nível tecnológico avançado.[8] Os defensores da mudança tecnológica tipicamente veem as tecnologias convergentes e emergentes proporcionando um aperfeiçoamento da condição humana. Já os críticos da mudança tecnológica, bem como alguns defensores, tais como o filósofo transhumanista Nick Bostrom, previnem que muitas dessas tecnologias podem apresentar perigos, e até levar À extinção humana; logo, representam riscos existenciais.[9][10]</p>
-                         <p>Muitos debates sobre tecnoética centram em questões de distribuição de justiça, em especial quanto à alocação de formas benéficas de tecnologia. Alguns pensadores, como o eticista ambiental Bill McKibben, se opõe ao desenvolvimento de tecnologia avançada, em parte, devido ao medo de uma distribuição desigual de uma forma capaz de piorar a desigualdade econômica.[11] Contrastando com essa visão, o inventor Ray Kurzweil está entre os técnico-utopistas que acreditam que as tecnologias convergentes e emergentes poderiam e irão eliminar a pobreza e abolir o sofrimento.[12]</p>
-                         <p>Analistas como Martin Ford, autor do livro The Lights in the Tunnel: Automation, Accelerating Technology and the Economy of the Future,[13] argumentam que os avanços na tecnologia da informação, robôs e outras formas de automação resultarão em grandes taxas de desemprego, que aumentarão proporcionalmente ao aprimoramento das máquinas e software, desde o ponto onde alcançarem as capacidades dos trabalhadores humanos em realizar tarefas rotineiras, até o momento em que excedê-los. </p>
-                         <p>Como a inteligência artificial e a robótica estão em desenvolvimento rápido e constante, até os empregados qualificados estarão ameaçados. Tecnologias como a aprendizagem de máquina[14] podem, em última instância, possibilitar que computadores executem muitos trabalhos baseados em conhecimento, que requerem um nível considerável de educação. Tal evolução pode resultar em taxas de desemprego catastróficas em todos os níveis de qualificação, salários estagnados ou em queda para a maioria dos trabalhadores, e aumento da concentração de renda e riqueza dos capitalistas detentores da tecnologia, em uma fração ainda maior da economia. Isso pode acarretar em gastos com o consumidor deprimido e com o crescimento econômico, pois a maior parte da população não possui renda suficiente para comprar os produtos e os serviços.[15] - ver Sistema de inovação tecnológica</p>
+                    <p>Muitos escritores, incluindo o cientista da computação Bill Joy,[7] tem identificado grupos tecnológicos que consideram críticos para o futuro da humanidade. Joy alerta que a tecnologia poderá ser utilizada, pelas elites, tanto para o bem, quanto para o mal. Podem empregá-la como faria um "Bom Pastor" para melhorar a qualidade de vida de todas as pessoas, ou podem decidir que todas as pessoas são supérfluas e dar início ao extermínio em massa, eliminando aqueles considerados desnecessários devido a um nível tecnológico avançado.[8] Os defensores da mudança tecnológica tipicamente veem as tecnologias convergentes e emergentes proporcionando um aperfeiçoamento da condição humana. Já os críticos da mudança tecnológica, bem como alguns defensores, tais como o filósofo transhumanista Nick Bostrom, previnem que muitas dessas tecnologias podem apresentar perigos, e até levar À extinção humana; logo, representam riscos existenciais.[9][10]</p>
+                    <p>Muitos debates sobre tecnoética centram em questões de distribuição de justiça, em especial quanto à alocação de formas benéficas de tecnologia. Alguns pensadores, como o eticista ambiental Bill McKibben, se opõe ao desenvolvimento de tecnologia avançada, em parte, devido ao medo de uma distribuição desigual de uma forma capaz de piorar a desigualdade econômica.[11] Contrastando com essa visão, o inventor Ray Kurzweil está entre os técnico-utopistas que acreditam que as tecnologias convergentes e emergentes poderiam e irão eliminar a pobreza e abolir o sofrimento.[12]</p>
+                    <p>Analistas como Martin Ford, autor do livro The Lights in the Tunnel: Automation, Accelerating Technology and the Economy of the Future,[13] argumentam que os avanços na tecnologia da informação, robôs e outras formas de automação resultarão em grandes taxas de desemprego, que aumentarão proporcionalmente ao aprimoramento das máquinas e software, desde o ponto onde alcançarem as capacidades dos trabalhadores humanos em realizar tarefas rotineiras, até o momento em que excedê-los. </p>
+                    <p>Como a inteligência artificial e a robótica estão em desenvolvimento rápido e constante, até os empregados qualificados estarão ameaçados. Tecnologias como a aprendizagem de máquina[14] podem, em última instância, possibilitar que computadores executem muitos trabalhos baseados em conhecimento, que requerem um nível considerável de educação. Tal evolução pode resultar em taxas de desemprego catastróficas em todos os níveis de qualificação, salários estagnados ou em queda para a maioria dos trabalhadores, e aumento da concentração de renda e riqueza dos capitalistas detentores da tecnologia, em uma fração ainda maior da economia. Isso pode acarretar em gastos com o consumidor deprimido e com o crescimento econômico, pois a maior parte da população não possui renda suficiente para comprar os produtos e os serviços.[15] - ver Sistema de inovação tecnológica</p>
                 </section>
+
                 <section id="acronimos">
                     <details>
                         <summary>Barra de progresso e medidor</summary>
@@ -105,8 +128,15 @@
                         <meter id="nivel" value="0.8" min="0" max="1">80%</meter>
                     </details>
                     <h2>Acrônimos</h2>
-                          <p>NBTC, um acrônimo para Nanotecnologia, Biotecnologia, Tecnologia da informação e Ciência cognitiva, é atualmente o termo mais popular para tecnologias convergentes e emergentes, tendo sido introduzido no domínio público pela publicação do Converging Technologies for Improving Human Performance (Tecnologias Convergentes para Aprimoramento da Performance Humana), um relatório patrocinado, em parte, pela Fundação Nacional da Ciência dos EUA. </p>
-                          <p>Diversos outros acrônimos, por vezes parcialmente similares, foram criados. GNR(Genética,Nanotecnologia e Robótica ), por Bill Joy.[17] O jornalista Joel Garreau, no livro Radical Evolution: The Promise and Peril of Enhancing Our Minds, Our Bodies — and What It Means to Be Human utiliza GRIN, para Genética, Robótica, Informação e Nanoprocessos,[18] enquanto o jornalista científico Douglas Mulhall, no livro in Our Molecular Future: How Nanotechnology, Robotics, Genetics and Artificial Intelligence Will Transform Our World, emprega "GRAIN", para Genética, Robótica, Inteligência Artificial e Nanotecnologia.[19] Outro acrônimo cunhado pela organização de tecnologia apropriada Grupo ETC é "BANG" para Bits, Átomos, Neurônio e Genes.[20]</p>
+                    <p>NBTC, um acrônimo para Nanotecnologia, Biotecnologia, Tecnologia da informação e Ciência cognitiva, é atualmente o termo mais popular para tecnologias convergentes e emergentes, tendo sido introduzido no domínio público pela publicação do Converging Technologies for Improving Human Performance (Tecnologias Convergentes para Aprimoramento da Performance Humana), um relatório patrocinado, em parte, pela Fundação Nacional da Ciência dos EUA.</p>
+                    <p>Diversos outros acrônimos, por vezes parcialmente similares, foram criados. GNR(Genética,Nanotecnologia e Robótica ), por Bill Joy.[17] O jornalista Joel Garreau, no livro Radical Evolution: The Promise and Peril of Enhancing Our Minds, Our Bodies — and What It Means to Be Human utiliza GRIN, para Genética, Robótica, Informação e Nanoprocessos,[18] enquanto o jornalista científico Douglas Mulhall, no livro in Our Molecular Future: How Nanotechnology, Robotics, Genetics and Artificial Intelligence Will Transform Our World, emprega "GRAIN", para Genética, Robótica, Inteligência Artificial e Nanotecnologia.[19] Outro acrônimo cunhado pela organização de tecnologia apropriada Grupo ETC é "BANG" para Bits, Átomos, Neurônio e Genes.[20]</p>
+                    <p>
+                      <abbr title="Nanotecnologia, Biotecnologia, Tecnologia da informação e Ciência cognitiva">NBTC</abbr>,
+                      <abbr title="Genética, Nanotecnologia e Robótica">GNR</abbr>,
+                      <abbr title="Genética, Robótica, Informação e Nanoprocessos">GRIN</abbr>,
+                      <abbr title="Genética, Robótica, Inteligência Artificial e Nanotecnologia">GRAIN</abbr> e
+                      <abbr title="Bits, Átomos, Neurônio e Genes">BANG</abbr>.
+                    </p>
                     <ul>
                         <li>NBTC: Nanotecnologia, Biotecnologia, Tecnologia da informação e Ciência cognitiva</li>
                         <li>GNR: Genética, Nanotecnologia e Robótica</li>
@@ -115,6 +145,7 @@
                         <li>BANG: Bits, Átomos, Neurônio e Genes</li>
                     </ul>
                 </section>
+
                 <section id="ver-tambem">
                     <h2>Ver também</h2>
                     <ul>
@@ -133,6 +164,7 @@
                         <li>Transumanismo</li>
                     </ul>
                 </section>
+
                 <section id="leitura-adicional">
                     <h2>Leitura adicional</h2>
                     <h3>Geral</h3>
@@ -152,6 +184,7 @@
                         <li>Kendall, K. E. (1999). Emerging information technologies: Improving decisions, cooperation, and infrastructure. Thousand Oaks, Calif: Sage Publications.</li>
                     </ul>
                 </section>
+
                 <section id="referencias">
                     <h2>Referências</h2>
                     <ol>
@@ -176,13 +209,13 @@
                         <li>Mulhall, Douglas (2002). Our Molecular Future: How Nanotechnology, Robotics, Genetics and Artificial Intelligence Will Transform Our World. [S.l.]: Prometheus Books. ISBN 1-57392-992-1.</li>
                         <li>ETC Group (2003). «The Strategy for Converging Technologies: The Little BANG Theory» (PDF). Consultado em 9 de fevereiro de 2007. Arquivado do original (PDF) em 25 de setembro de 2007.</li>
                     </ol>
-                </article>
+                </section>
+            </article>
         </main>
     </div>
 
     <footer class="footer" role="contentinfo">
-    
-    <p>Conteúdo adaptado da <a href="https://pt.wikipedia.org/wiki/Tecnologias_emergentes" target="_blank" rel="noopener noreferrer" aria-label="Acessar artigo original na Wikipedia sobre Tecnologias Emergentes (abre em nova aba)">Wikipedia</a>. Licença CC BY-SA 4.0.</p>
+        <p>Conteúdo adaptado da <a href="https://pt.wikipedia.org/wiki/Tecnologias_emergentes" target="_blank" rel="noopener noreferrer" aria-label="Acessar artigo original na Wikipedia sobre Tecnologias Emergentes (abre em nova aba)">Wikipedia</a>. Licença CC BY-SA 4.0.</p>
     </footer>
 </body>
 </html>
